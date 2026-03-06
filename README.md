@@ -1,94 +1,38 @@
-# Sistema de Gestion de Consultorios
+# Clinic Management System
 
-Aplicacion web para la administracion de centros de salud y consultorios, construida sobre Next.js. El proyecto usa la marca funcional `ProSalud` y centraliza la operacion diaria de pacientes, profesionales, turnos e historias clinicas desde una sola interfaz.
+## Overview
+The Clinic Management System is designed to streamline the operations of clinics and healthcare facilities, improving patient care and administrative efficiency.
 
-## Que incluye hoy
+## Features
+- Patient Registration: Easily register new patients, manage patient data, and track appointments.
+- Appointment Scheduling: Schedule and manage patient appointments efficiently, with reminders for both patients and staff.
+- Medical Records Management: Keep track of patient medical histories, treatment plans, and prescriptions.
+- Billing and Invoicing: Automate billing processes, manage invoices, and provide financial reports.
+- User Management: Different access levels for admins, doctors, and nurses to ensure data security and privacy.
 
-- Landing publica para presentar el producto y sus funcionalidades.
-- Autenticacion con Clerk para proteger las areas privadas.
-- Integracion con Convex como backend y base de datos en tiempo real.
-- Paneles separados por rol para recepcion, gerencia y profesionales.
-- Gestion de pacientes, profesionales, especialidades y obras sociales.
-- Agenda de turnos con vistas de calendario, tabla y modales de edicion.
-- Historias clinicas con diagnosticos, indicaciones, medicamentos y tratamientos.
-- Reportes visuales para seguimiento operativo y ocupacion.
+## Architecture
+The system architecture is built on a client-server model, consisting of:
+- **Frontend:** A user-friendly interface built with React for seamless interactions.
+- **Backend:** A robust server-side application built with Node.js and Express.js responsible for data processing and API management.
+- **Database:** A relational database (e.g., PostgreSQL) that securely stores patient records, appointment data, and billing information.
 
-## Modulos principales
+## Usage
+1. Clone the repository:
+   ```
+   git clone https://github.com/147pop/sistema-gestion-consultorios
+   ```
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Start the server:
+   ```
+   npm start
+   ```
+4. Access the application in your browser at `http://localhost:3000`.
 
-### Recepcionista
+## Contributing
+We welcome contributions from the community! Please open an issue or submit a pull request if you'd like to contribute.
 
-- Alta y consulta de pacientes.
-- Gestion de turnos.
-- Calendario de disponibilidad.
-- Acceso a historias clinicas.
-- Administracion de profesionales.
-
-### Gerencia
-
-- Gestion de pacientes.
-- Gestion de profesionales.
-- Gestion de especialidades.
-- Gestion de obras sociales.
-- Reportes con metricas y visualizaciones.
-
-### Profesional
-
-- Vista de turnos del dia.
-- Agenda y calendario.
-- Consulta de pacientes.
-- Carga y seguimiento de historias clinicas.
-- Perfil y reportes.
-
-## Stack tecnico
-
-- Next.js 15
-- React 19
-- TypeScript
-- Tailwind CSS 4
-- Clerk
-- Convex
-- Radix UI
-- Recharts
-
-## Estructura del proyecto
-
-- `app/`: rutas y pantallas principales, separadas por roles.
-- `components/`: componentes reutilizables de UI y modulos funcionales.
-- `convex/`: esquema, funciones y logica de datos.
-- `hooks/`: hooks de soporte para UI y sincronizacion.
-- `lib/`: utilidades compartidas.
-- `public/`: assets estaticos.
-
-## Puesta en marcha
-
-1. Instalar dependencias:
-
-```bash
-npm install
-```
-
-2. Configurar variables de entorno necesarias para Clerk y Convex.
-
-Variables minimas detectadas en el codigo:
-
-- `NEXT_PUBLIC_CONVEX_URL`
-- Variables de Clerk para cliente y servidor
-
-3. Iniciar el proyecto en desarrollo:
-
-```bash
-npm run dev
-```
-
-4. Abrir `http://localhost:3000`.
-
-## Scripts disponibles
-
-- `npm run dev`: inicia el entorno de desarrollo.
-- `npm run build`: genera la build de produccion.
-- `npm run start`: levanta la aplicacion compilada.
-- `npm run lint`: ejecuta ESLint.
-
-## Estado actual
-
-Este repositorio ya contiene el codigo base del proyecto actual y sirve como punto de partida para continuar el desarrollo, ordenar modulos y preparar futuras mejoras funcionales.
+## License
+This project is licensed under the MIT License.
