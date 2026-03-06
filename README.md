@@ -24,7 +24,7 @@ Permite que recepcionistas, profesionales y gerentes trabajen en sincronía desd
 
 ### 📅 Sistema de Agenda y Turnos
 - **Calendario interactivo** con vista mensual, semanal y diaria
-- **Formulario inteligente** para agendar turnos con validaciones
+- **Formulario** para agendar turnos con validaciones
 - **Estados de turnos**: pendiente, confirmado, completado, cancelado
 - Disponibilidad de profesionales por especialidad
 - Notificaciones y recordatorios
@@ -63,5 +63,3 @@ Permite que recepcionistas, profesionales y gerentes trabajen en sincronía desd
 - **Autenticación**: Clerk
 - **Visualización**: Recharts (gráficos y dashboards)
 - **Code Quality**: ESLint + TypeScript strict mode
-
-### Estructura del Proyecto
