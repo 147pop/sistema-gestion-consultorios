@@ -1,38 +1,67 @@
-# Clinic Management System
+# Sistema de Gestión de Consultorios - ProSalud
 
-## Overview
-The Clinic Management System is designed to streamline the operations of clinics and healthcare facilities, improving patient care and administrative efficiency.
+**Plataforma integral de gestión para centros de salud y consultorios médicos** construida con tecnologías modernas (Next.js, React, TypeScript) que centraliza la administración de pacientes, profesionales, turnos e historias clínicas en una interfaz colaborativa.
 
-## Features
-- Patient Registration: Easily register new patients, manage patient data, and track appointments.
-- Appointment Scheduling: Schedule and manage patient appointments efficiently, with reminders for both patients and staff.
-- Medical Records Management: Keep track of patient medical histories, treatment plans, and prescriptions.
-- Billing and Invoicing: Automate billing processes, manage invoices, and provide financial reports.
-- User Management: Different access levels for admins, doctors, and nurses to ensure data security and privacy.
+## 🎯 Propósito
 
-## Architecture
-The system architecture is built on a client-server model, consisting of:
-- **Frontend:** A user-friendly interface built with React for seamless interactions.
-- **Backend:** A robust server-side application built with Node.js and Express.js responsible for data processing and API management.
-- **Database:** A relational database (e.g., PostgreSQL) that securely stores patient records, appointment data, and billing information.
+ProSalud es una solución empresarial para automatizar y optimizar las operaciones diarias de:
+- Centros médicos y políclinicos
+- Consultorios privados
+- Clínicas especializadas
+- Obras sociales y seguros
 
-## Usage
-1. Clone the repository:
-   ```
-   git clone https://github.com/147pop/sistema-gestion-consultorios
-   ```
-2. Install dependencies:
-   ```
-   npm install
-   ```
-3. Start the server:
-   ```
-   npm start
-   ```
-4. Access the application in your browser at `http://localhost:3000`.
+Permite que recepcionistas, profesionales y gerentes trabajen en sincronía desde una plataforma única con control de acceso por roles.
 
-## Contributing
-We welcome contributions from the community! Please open an issue or submit a pull request if you'd like to contribute.
+---
 
-## License
-This project is licensed under the MIT License.
+## ✨ Características Principales
+
+### 👥 Gestión de Pacientes
+- Registro completo con datos personales, documentación y contacto
+- Búsqueda rápida y filtrado avanzado
+- Historial de atenciones y tratamientos
+- Integración con obras sociales y planes de cobertura
+
+### 📅 Sistema de Agenda y Turnos
+- **Calendario interactivo** con vista mensual, semanal y diaria
+- **Formulario inteligente** para agendar turnos con validaciones
+- **Estados de turnos**: pendiente, confirmado, completado, cancelado
+- Disponibilidad de profesionales por especialidad
+- Notificaciones y recordatorios
+- Vista tabular de turnos con filtros
+
+### 📋 Historias Clínicas Digitales
+- Carga de diagnósticos, síntomas e indicaciones
+- Registro de medicamentos y tratamientos prescritos
+- Notas evolutivas del profesional
+- Acceso control por roles (lectura/escritura según perfil)
+- Trazabilidad completa de cambios
+
+### 📊 Reportes y Análisis
+- Dashboard ejecutivo con métricas clave (KPIs)
+- Ocupación de consultorio por profesional
+- Estadísticas de pacientes atendidos
+- Análisis de especialidades más demandadas
+- Reportes exportables para auditoría
+
+### 🔐 Control de Acceso y Seguridad
+- Autenticación integrada con **Clerk** (OAuth, passwords, 2FA)
+- Paneles separados por rol:
+  - **Recepcionista**: gestión de pacientes y turnos
+  - **Profesional**: agenda personal y carga de historias
+  - **Gerencia**: reportes, configuración y administración
+- Variables de entorno para datos sensibles
+
+---
+
+## 🏗️ Arquitectura Técnica
+
+### Tech Stack
+- **Frontend**: Next.js 15 + React 19 + TypeScript
+- **Styling**: Tailwind CSS 4 + Radix UI (componentes accesibles)
+- **Backend BaaS**: Convex (base de datos en tiempo real, serverless functions)
+- **Autenticación**: Clerk
+- **Visualización**: Recharts (gráficos y dashboards)
+- **Code Quality**: ESLint + TypeScript strict mode
+
+### Estructura del Proyecto
